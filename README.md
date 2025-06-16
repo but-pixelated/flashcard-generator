@@ -1,27 +1,27 @@
-# 🧠 Offline Flashcard Generator using Phi-3 (Ollama)
+# Offline Flashcard Generator using Phi-3 (Ollama)
 
 This is a fully offline Flashcard Generator powered by [Phi-3](https://ollama.com/library/phi3) using the [Ollama](https://ollama.com) runtime. It lets you:
 
-- ✅ Input **text** or **upload PDFs**
-- ✨ Generate flashcards in **Q/A format** using **phi3**
-- 📥 Export to **CSV** or directly as **.apkg (Anki Deck)**
-- 🌐 No API keys, no internet needed — all runs locally on your system
+-  Input **text** or **upload PDFs**
+-  Generate flashcards in **Q/A format** using **phi3**
+-  Export to **CSV** or directly as **.apkg (Anki Deck)**
+-  No API keys, no internet needed — all runs locally on your system
 
 ---
 
-## ✨ Features
+## Features
 
-- 💬 Text or PDF-based input  
-- 🔁 Use local LLM (**phi3**) via Ollama  
-- 📤 Export to `.csv` for spreadsheets or `.apkg` for Anki  
-- 🎛️ Option to choose how many flashcards to generate  
-- 🖼️ Simple web UI using Streamlit  
+- Text or PDF-based input  
+- Use local LLM (**phi3**) via Ollama  
+- Export to `.csv` for spreadsheets or `.apkg` for Anki  
+- Option to choose how many flashcards to generate  
+- Simple web UI using Streamlit  
 
 ---
 
-## ⚙️ Installation (Mac & Windows)
+## Installation (Mac & Windows)
 
-### 🔧 Prerequisites
+### Prerequisites
 
 Make sure the following are installed:
 
@@ -31,9 +31,9 @@ Make sure the following are installed:
 
 ---
 
-### 🖥️ Step-by-Step Setup
+###  Step-by-Step Setup
 
-#### ✅ 1. Clone this repo
+####  1. Clone this repo
 
 ```bash
 git clone git@github.com:but-pixelated/flashcard-generator.git
@@ -42,7 +42,7 @@ cd flashcard-generator
 
 ---
 
-#### ✅ 2. Set up virtual environment
+####  2. Set up virtual environment
 
 **Mac/Linux:**
 
@@ -60,7 +60,7 @@ virtualenv\Scripts\activate
 
 ---
 
-### ✅ 3. Install dependencies
+###  3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -76,10 +76,10 @@ pip install -r requirements.txt
 
 ---
 
-### ✅ 4. Install Ollama & Phi-3
+###  4. Install Ollama & Phi-3
 
 Follow the instructions here:  
-👉 https://ollama.com/download
+https://ollama.com/download
 
 Then run:
 
@@ -91,7 +91,7 @@ This will download the phi3 model locally (~2GB+)
 
 ---
 
-## 🚀 Run the App
+##  Run the App
 
 ```bash
 python -m streamlit run app.py (recommended, so it does not run the global venv)
@@ -104,20 +104,20 @@ http://localhost:8501
 
 ---
 
-## 🧪 Usage Instructions
+##  Usage Instructions
 
 1. Choose Input Mode: Text or PDF  
 2. Enter content or upload a PDF  
 3. Choose number of flashcards to generate  
-4. Click **✨ Generate Flashcards**  
+4. Click ** Generate Flashcards**  
 5. View them in the app  
 6. Download:
-   - 📥 as `.csv`  
-   - 📤 or as Anki `.apkg`  
+   -  as `.csv`  
+   -  or as Anki `.apkg`  
 
 ---
 
-## 🧠 Example Flashcard Format
+##  Example Flashcard Format
 
 ```
 Q: What is the powerhouse of the cell?  
@@ -126,27 +126,27 @@ A: The mitochondria, which generates energy (ATP) through cellular respiration.
 
 ---
 
-## 📤 Export Options
+##  Export Options
 
 - **CSV**: Opens in Excel/Google Sheets  
 - **Anki .apkg**: Importable directly into the Anki app  
 
 ---
 
-## ❓ Troubleshooting
+##  Troubleshooting
 
-- ❌ No flashcards found?  
+-  No flashcards found?  
   → Try reducing input size or making input clearer  
 
-- 🐌 App feels slow?  
+-  App feels slow?  
   → Phi3 runs on CPU — be patient!  
 
-- 🐛 Mac permission issues?  
+-  Mac permission issues?  
   → Try `chmod +x` or allow Terminal access to documents  
 
 ---
 
-## 📦 File Structure
+##  File Structure
 
 ```
 flashcard-generator/
@@ -158,13 +158,13 @@ flashcard-generator/
 
 ---
 
-## 🛡️ License
+##  License
 
 MIT License – free to use, fork, and improve.
 
 ---
 
-## 🙌 Credits
+##  Credits
 
 Made with 💙 by [@but-pixelated](https://github.com/but-pixelated)  
 Powered by:

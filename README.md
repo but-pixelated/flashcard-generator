@@ -41,11 +41,11 @@ Make sure the following are installed:
 git clone git@github.com:but-pixelated/flashcard-generator.git
 cd flashcard-generator
 
----
 
 ### ✅ 2. Set up virtual environment
 
 **Mac/Linux:**
+
 ```bash
 python3 -m venv virtualenv
 source virtualenv/bin/activate

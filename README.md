@@ -45,7 +45,8 @@ cd flashcard-generator
 
 ### ✅ 2. Set up virtual environment
 
-Mac/Linux:
+**Mac/Linux:**
+```bash
 python3 -m venv virtualenv
 source virtualenv/bin/activate
 

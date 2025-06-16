@@ -44,7 +44,7 @@ cd flashcard-generator
 
 ---
 
-**✅ 2. Set up virtual environment**
+### ✅ 2. Set up virtual environment
 
 Mac/Linux:
 python3 -m venv virtualenv
@@ -58,7 +58,7 @@ virtualenv\Scripts\activate
 
 ---
 
-✅ 3. Install dependencies
+### ✅ 3. Install dependencies
 
 pip install -r requirements.txt
 **

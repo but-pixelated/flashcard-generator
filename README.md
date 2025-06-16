@@ -42,8 +42,9 @@ Make sure the following are installed:
 git clone git@github.com:but-pixelated/flashcard-generator.git
 cd flashcard-generator
 
+---
 
-✅ 2. Set up virtual environment
+**✅ 2. Set up virtual environment**
 
 Mac/Linux:
 python3 -m venv virtualenv
@@ -55,6 +56,7 @@ Windows:
 python -m venv virtualenv
 virtualenv\Scripts\activate
 
+---
 
 ✅ 3. Install dependencies
 

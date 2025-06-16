@@ -11,13 +11,11 @@ This is a fully offline Flashcard Generator powered by [Phi-3](https://ollama.co
 
 ## ✨ Features
 
-- 💬 Text or PDF-based input
-- 🔁 Use local LLM (**phi3**) via Ollama
-- 📤 Export to `.csv` for spreadsheets or `.apkg` for Anki
-- 🎛️ Option to choose how many flashcards to generate
-- 🖼️ Simple web UI using Streamlit
-
----
+- 💬 Text or PDF-based input  
+- 🔁 Use local LLM (**phi3**) via Ollama  
+- 📤 Export to `.csv` for spreadsheets or `.apkg` for Anki  
+- 🎛️ Option to choose how many flashcards to generate  
+- 🖼️ Simple web UI using Streamlit  
 
 ---
 
@@ -27,9 +25,9 @@ This is a fully offline Flashcard Generator powered by [Phi-3](https://ollama.co
 
 Make sure the following are installed:
 
-- **Python 3.9+**
-- **[Git](https://git-scm.com/downloads)**
-- **[Ollama](https://ollama.com)** (for running local phi3 model)
+- **Python 3.9+**  
+- [Git](https://git-scm.com/downloads)  
+- [Ollama](https://ollama.com) *(for running local phi3 model)*  
 
 ---
 
@@ -40,132 +38,136 @@ Make sure the following are installed:
 ```bash
 git clone git@github.com:but-pixelated/flashcard-generator.git
 cd flashcard-generator
+```
 
-```bash
+---
 
-### ✅ 2. Set up virtual environment
+#### ✅ 2. Set up virtual environment
 
 **Mac/Linux:**
 
 ```bash
 python3 -m venv virtualenv
 source virtualenv/bin/activate
+```
 
+**Windows:**
 
-Windows:
-
+```bash
 python -m venv virtualenv
 virtualenv\Scripts\activate
+```
 
 ---
 
 ### ✅ 3. Install dependencies
 
+```bash
 pip install -r requirements.txt
-**
-The requirements.txt includes:**
+```
 
+**The `requirements.txt` includes:**
 
-streamlit
-pymupdf
-pandas
-genanki
-ollama
+- streamlit  
+- pymupdf  
+- pandas  
+- genanki  
+- ollama  
 
+---
 
+### ✅ 4. Install Ollama & Phi-3
 
+Follow the instructions here:  
+👉 https://ollama.com/download
 
-✅ 4. Install Ollama & Phi-3
+Then run:
 
-Follow the instructions here:
-	•	https://ollama.com/download (for your OS)
-
-After installing Ollama, run:
-
-
+```bash
 ollama pull phi3
-This will download the phi3 model locally (~2GB+).
+```
 
+This will download the phi3 model locally (~2GB+)
 
-🚀 Run the app
+---
+
+## 🚀 Run the App
+
+```bash
 streamlit run app.py
+```
 
-You’ll see the app launch in your browser at:
+Visit in browser:  
 http://localhost:8501
 
+---
 
+## 🧪 Usage Instructions
 
-🧪 Usage Instructions
-	1.	Choose Input Mode: Text or PDF
-	2.	Enter content or upload a PDF
-	3.	Choose number of flashcards to generate
-	4.	Click “✨ Generate Flashcards”
-	5.	View them in the app
-	6.	Download:
-	•	📥 as .csv
-	•	📤 or as Anki .apkg
+1. Choose Input Mode: Text or PDF  
+2. Enter content or upload a PDF  
+3. Choose number of flashcards to generate  
+4. Click **✨ Generate Flashcards**  
+5. View them in the app  
+6. Download:
+   - 📥 as `.csv`  
+   - 📤 or as Anki `.apkg`  
 
+---
 
+## 🧠 Example Flashcard Format
 
-
-🧠 Example Flashcard Format
-Q: What is the powerhouse of the cell?
+```
+Q: What is the powerhouse of the cell?  
 A: The mitochondria, which generates energy (ATP) through cellular respiration.
+```
 
+---
 
-📤 Export Options
-	•	CSV: Opens in Excel/Google Sheets
-	•	Anki .apkg: Importable directly into the Anki app
+## 📤 Export Options
 
+- **CSV**: Opens in Excel/Google Sheets  
+- **Anki .apkg**: Importable directly into the Anki app  
 
+---
 
-❓ Troubleshooting
-	•	❌ No flashcards found?
-	•	Try reducing input size.
-	•	Use clear and structured input.
-	•	🐌 App feels slow?
-	•	Phi3 is CPU-only, give it a sec!
-	•	🐛 Permission issues on Mac?
-	•	Run chmod +x or grant Terminal permission to access documents.
+## ❓ Troubleshooting
 
+- ❌ No flashcards found?  
+  → Try reducing input size or making input clearer  
 
+- 🐌 App feels slow?  
+  → Phi3 runs on CPU — be patient!  
 
-📦 File Structure
+- 🐛 Mac permission issues?  
+  → Try `chmod +x` or allow Terminal access to documents  
 
+---
 
+## 📦 File Structure
+
+```
 flashcard-generator/
-├── app.py                 # main Streamlit app
-├── requirements.txt       # python3 dependencies
-├── README.md              # this file
-├── virtualenv/            # your Python env (not tracked in git)
+├── app.py                 # main Streamlit app  
+├── requirements.txt       # python3 dependencies  
+├── README.md              # this file  
+├── virtualenv/            # your Python env (not tracked in git)  
+```
 
+---
 
-
-🛡️ License
+## 🛡️ License
 
 MIT License – free to use, fork, and improve.
 
+---
 
-🙌 Credits
+## 🙌 Credits
 
-Made with 💙 by @but-pixelated
+Made with 💙 by [@but-pixelated](https://github.com/but-pixelated)  
 Powered by:
-	•	OpenAI’s Phi-3
-	•	Ollama
-	•	Streamlit
-	•	genanki
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- OpenAI’s Phi-3  
+- Ollama  
+- Streamlit  
+- genanki

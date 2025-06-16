@@ -51,9 +51,9 @@ def export_to_anki(flashcards, deck_name="AI Flashcards"):
         my_deck.add_note(note)
     genanki.Package(my_deck).write_to_file("flashcards.apkg")
 
-st.set_page_config(page_title="📚 Flashcard Generator (Offline)", layout="centered")
+st.set_page_config(page_title=" Flashcard Generator (Offline)", layout="centered")
 
-st.title("🧠 Flashcard Generator with phi3 (Offline)")
+st.title(" Flashcard Generator with phi3 (Offline)")
 
 input_mode = st.radio("Choose Input Mode", ["Text", "PDF"])
 
@@ -66,9 +66,9 @@ elif input_mode == "PDF":
         st.success("PDF uploaded successfully!")
         input_text = extract_text_from_pdf(uploaded_file)
 
-num_flashcards = st.slider("🧠 Number of flashcards to generate", 1, 50, 5)
+num_flashcards = st.slider(" Number of flashcards to generate", 1, 50, 5)
 
-if st.button("✨ Generate Flashcards"):
+if st.button(" Generate Flashcards"):
     if input_text.strip() == "":
         st.warning("Please enter some text or upload a PDF!")
     else:
@@ -86,18 +86,18 @@ if st.button("✨ Generate Flashcards"):
             flashcards = parse_flashcards(flashcards_raw)[:num_flashcards]
 
             if flashcards:
-                st.subheader("🎴 Flashcards")
+                st.subheader(" Flashcards")
                 for i, fc in enumerate(flashcards):
                     with st.expander(f"Q{i+1}: {fc['question']}"):
                         st.markdown(f"**A:** {fc['answer']}")
 
                 df = pd.DataFrame(flashcards)
                 csv = df.to_csv(index=False)
-                st.download_button("📥 Download as CSV", data=csv, file_name="flashcards.csv", mime="text/csv")
+                st.download_button(" Download as CSV", data=csv, file_name="flashcards.csv", mime="text/csv")
 
-                if st.button("📤 Export to Anki"):
+                if st.button(" Export to Anki"):
                     export_to_anki(flashcards)
                     with open("flashcards.apkg", "rb") as f:
-                        st.download_button("📥 Download .apkg", data=f, file_name="flashcards.apkg")
+                        st.download_button(" Download .apkg", data=f, file_name="flashcards.apkg")
             else:
                 st.error("No flashcards could be parsed from the response.")

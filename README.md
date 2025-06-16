@@ -19,7 +19,6 @@ This is a fully offline Flashcard Generator powered by [Phi-3](https://ollama.co
 
 ---
 
-
 ---
 
 ## ⚙️ Installation (Mac & Windows)

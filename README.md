@@ -41,6 +41,7 @@ Make sure the following are installed:
 git clone git@github.com:but-pixelated/flashcard-generator.git
 cd flashcard-generator
 
+```bash
 
 ### ✅ 2. Set up virtual environment
 

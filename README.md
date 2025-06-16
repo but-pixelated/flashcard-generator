@@ -94,7 +94,7 @@ This will download the phi3 model locally (~2GB+)
 ## 🚀 Run the App
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Visit in browser:  
